@@ -2,6 +2,7 @@ package com.kabu.kabi.booklisting;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.ListView;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
         books.add(new Book("Hello Android"));
         books.add(new Book("How to be a Billionaire"));
         books.add(new Book("Welcome to the three commas club"));
+
+
+        BookAdapter adapter = new BookAdapter(this, R.layout.list_item, books);
+        ListView listView = findViewById(R.id.list);
+        listView.setAdapter(adapter);
 
     }
 

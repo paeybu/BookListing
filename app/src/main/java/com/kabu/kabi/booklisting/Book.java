@@ -6,4 +6,8 @@ class Book {
     public Book(String title) {
         mTitle = title;
     }
+
+    public String getTitle() {
+        return mTitle;
+    }
 }
