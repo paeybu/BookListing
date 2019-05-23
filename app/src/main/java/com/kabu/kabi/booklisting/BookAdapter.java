@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -29,6 +30,7 @@ public class BookAdapter extends ArrayAdapter<Book> {
 
         Book book = getItem(position);
         TextView titleTv = listItemView.findViewById(R.id.titleTv);
+        ImageView thumbIv = listItemView.findViewById(R.id.thumbIv);
 
         titleTv.setText(book.getTitle());
 
