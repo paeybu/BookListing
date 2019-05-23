@@ -13,6 +13,8 @@ import androidx.annotation.Nullable;
 import java.util.List;
 
 public class BookAdapter extends ArrayAdapter<Book> {
+
+
     public BookAdapter(@androidx.annotation.NonNull Context context, int resource, @androidx.annotation.NonNull List<Book> objects) {
         super(context, resource, objects);
     }
